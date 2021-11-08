@@ -2,7 +2,7 @@
 
 ### Test data dependecy
 
-if ! python ./examples/scripts/data_dependency.py ./examples/scripts/data_dependency.sol; then
+if ! python ./CI/slither/examples/scripts/data_dependency.py ../../contracts/Controller.sol; then
     echo "data dependency failed"
     exit 1
 fi
